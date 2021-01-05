@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4772,11 +4772,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372193360}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -4792,6 +4787,11 @@ PrefabInstance:
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 671079296}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7059,11 +7059,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020291159}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -7083,6 +7078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: AdditiveMotorForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
       objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
@@ -7446,7 +7446,7 @@ TerrainCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177449838}
   m_Material: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_TerrainData: {fileID: 15600000, guid: 8e898b182a1d594499238e6e40279e5a, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &177449840
@@ -7481,6 +7481,7 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 0
   m_ScaleInLightmap: 0.0512
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
@@ -8052,21 +8053,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1751934183}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_TagString
-      value: trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -8091,6 +8077,21 @@ PrefabInstance:
         type: 3}
       propertyPath: AdditiveMotorForce
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_TagString
+      value: trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
@@ -9345,16 +9346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 150678461}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -9370,6 +9361,16 @@ PrefabInstance:
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 699041536}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30632,11 +30633,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1752838166}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -30656,6 +30652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: AdditiveMotorForce
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
       objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
@@ -38941,11 +38942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1729114713}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -38965,6 +38961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: AdditiveMotorForce
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
       objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
@@ -40219,11 +40220,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1540291668}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -40239,6 +40235,11 @@ PrefabInstance:
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 80443703}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44295,11 +44296,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1794075886}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -44315,6 +44311,11 @@ PrefabInstance:
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1498940235}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44931,11 +44932,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1779500697}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -44951,6 +44947,11 @@ PrefabInstance:
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 979990246}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63931,11 +63932,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2070783862}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -63965,6 +63961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: AdditiveMotorForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
       objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
@@ -93995,22 +93996,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugSpeed: 0
+  GoalDistanceThreshold: 2
+  TriggerHeight: 0
   bezier: {fileID: 401344023}
   pathResolution: 600
-  TriggerHeight: 0
   GoalIndex: 0
   PassedIndex: 0
-  GoalDistanceThreshold: 2
   SurfaceCosine: 0
+  DesiredVelocity: {x: 0, y: 0, z: 0}
+  EnterLoopVelocity: 0
+  MovingLoopRadius: 0
+  DesiredVelocityMagnitude: 0
   F: 15
   MotorForce: 10
-  DesiredVelocity: {x: 0, y: 0, z: 0}
-  DesiredVelocityMagnitude: 0
   SpeedToDesiredVelocity: 0.1
   SpeedToDesiredRotation: 0.2
   GravityFixedEnergy: 3
-  EnterLoopVelocity: 0
-  MovingLoopRadius: 0
   MaximumVelocity: 500
   CurrentState:
     m_PersistentCalls:
@@ -94026,8 +94027,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &2034394784
 GameObject:
   m_ObjectHideFlags: 0
@@ -98859,16 +98858,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051627879}
     m_Modifications:
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_Name
-      value: trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
-        type: 3}
-      propertyPath: m_TagString
-      value: trigger
-      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270435, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -98884,6 +98873,16 @@ PrefabInstance:
       propertyPath: MyAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1816133205}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_Name
+      value: trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054301639631270438, guid: 9d47b63ac7864934fb5442e2bd5b8218,
+        type: 3}
+      propertyPath: m_TagString
+      value: trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2054301639631270439, guid: 9d47b63ac7864934fb5442e2bd5b8218,
         type: 3}
       propertyPath: m_LocalPosition.x

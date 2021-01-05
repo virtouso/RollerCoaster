@@ -5,44 +5,47 @@ public class LeadingCabin : MonoBehaviour
 {
     public static LeadingCabin _instance;
 
-
     [SerializeField] private bool DebugSpeed;
 
     #region path variables
+
+    [SerializeField] public float GoalDistanceThreshold;
+    [SerializeField] public float TriggerHeight;
+
     [SerializeField] private BezierMaster.BezierMaster bezier;
+    [SerializeField] private int pathResolution;
+    [SerializeField] private int GoalIndex;
+    [SerializeField] private int PassedIndex;
+    [SerializeField] private float SurfaceCosine;
     private Vector3[] CurvePoints;
-    public int pathResolution;
-    public float TriggerHeight;
-    public int GoalIndex;
-    public int PassedIndex;
-    public float GoalDistanceThreshold;
-    public float SurfaceCosine;
     #endregion
 
     #region physics variables
+    [SerializeField] public Vector3 DesiredVelocity;
+    [SerializeField] public float EnterLoopVelocity;
+    [SerializeField] public float MovingLoopRadius;
+    [SerializeField] public float DesiredVelocityMagnitude;
+
     private Rigidbody rigidBody;
-    public float F;
-    public float MotorForce;
-  public Vector3 DesiredVelocity;
-    public float DesiredVelocityMagnitude;
-    public float SpeedToDesiredVelocity;
-    public float SpeedToDesiredRotation;
-    public float GravityFixedEnergy;
-    public float EnterLoopVelocity;
-    public float MovingLoopRadius;
-    public float MaximumVelocity;
+    [SerializeField] private float F;
+    [SerializeField] private float MotorForce;
+    [SerializeField] private float SpeedToDesiredVelocity;
+    [SerializeField] private float SpeedToDesiredRotation;
+    [SerializeField] private float GravityFixedEnergy;
+
+    [SerializeField] private float MaximumVelocity;
     #endregion
 
 
 
-    #region unity Events
+    #region unity Callbacks
     private void Awake()
     {
         CurvePoints = bezier.GetPath(pathResolution);
         _instance = this;
         rigidBody = GetComponent<Rigidbody>();
     }
-    
+
     private void FixedUpdate()
     {
 
@@ -54,7 +57,7 @@ public class LeadingCabin : MonoBehaviour
 
         GetDesiredVelocity();
         GetDesiredRotation();
-        if (rigidBody.velocity.magnitude>MaximumVelocity)
+        if (rigidBody.velocity.magnitude > MaximumVelocity)
         {
             rigidBody.velocity = DesiredVelocity * MaximumVelocity;
         }
@@ -138,7 +141,7 @@ public class LeadingCabin : MonoBehaviour
     }
     public void InLoop()
     {
-        DesiredVelocityMagnitude =MotorForce+ EnterLoopVelocity + (2 * GravityFixedEnergy * (TriggerHeight - transform.position.y)/MovingLoopRadius);
+        DesiredVelocityMagnitude = MotorForce + EnterLoopVelocity + (2 * GravityFixedEnergy * (TriggerHeight - transform.position.y) / MovingLoopRadius);
     }
     public void Idle()
     {
